@@ -49,7 +49,7 @@ def main():
     st.write("이미지를 업로드하면 네이버 클라우드 OCR API로 인식 결과를 보여줍니다.")
 
     # 1) 이미지 업로더
-    uploaded_file = st.file_uploader("이미지를 업로드하세요", type=["jpg", "jpeg", "png"])
+    uploaded_file = st.file_uploader("이미지를 업로드하세요", type=["jpg", "jpeg", "png", "JPG", "JPEG", "PNG"])
     
     if uploaded_file is not None:
         # 2) 업로드된 파일을 '바이트' 형태로 한 번만 읽기
